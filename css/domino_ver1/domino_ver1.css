@@ -1,0 +1,474 @@
+/********   body   **********/
+
+body {
+  background-image: url(img/body_main.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+.imgWhiteLayer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: rgba(255,255,255,0.5);
+  margin: 0px;
+  padding: 0px;
+}
+
+.mainImageErea {
+  overflow: hidden;
+  margin: 100px auto;
+  border-radius: 50px;
+  width: 1000px;
+  height: 600px;
+  border: solid 3px #0000cd;
+}
+
+/**********   start page   ***********/
+.startPage {
+  background-image: url(img/start_page.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  margin: 0px;
+  padding: 0px;
+  width: 1000px;
+  height: 600px;
+  /*display: none;*/
+}
+
+.startPage h1 {
+  margin: 0px;
+  font-family: 'Bungee', cursive;
+  font-weight: normal;
+  font-size: 80px;
+  text-align: center;
+  color: #0000cd;
+}
+
+.startPage small {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 20px;
+  color: #0000cd;
+  text-align: center;
+  margin: 20px 50px;;
+  float: right;
+}
+
+    /*********   startPage & goalPage button   ***********/
+.startPage button, .goalPage button {
+  background-color: #fff;
+  border: solid 5px #0000cd;
+  width: 300px;
+  border-radius: 45px;
+  margin: 200px 350px 0px 350px;
+  cursor: pointer;
+}
+
+.startPage h3, .goalPage h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 50px;
+  margin: 0px;
+  color: #0000cd;
+  padding: 10px 0px;
+}
+
+/**********   domino page  *************/
+
+.dominoPage {
+  width: 1000px;
+  height: 600px;
+  overflow: hidden;
+  /*display: none;*/
+}
+
+    /********   top_line   ***************/
+.top_line {
+  margin-top: 50px;
+  width: 1000px;
+  height: 110px;
+}
+
+#t1,#t2,#t3,#t4,#t5,#t6 {
+  height: 100px;
+  width: 50px;
+  border: solid 2px rgba(0,0,255,0.9);
+  background-color: rgba(0,0,255,0.3);
+  margin: 0px;
+  margin-left: 5px;
+  float: left;
+  transition: all 1s linear;
+}
+
+      /*******   domino   character common  ***********/
+.domino p, .square p, .tower p, .box p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 30px;
+  color: #0000cd;
+  text-align: center;
+}
+
+#t6 {
+  margin-right: 15px;
+}
+
+.square {
+  height: 100px;
+  width: 100px;
+  border: solid 2px rgba(0,0,255,0.9);
+  background-color: rgba(0,0,255,0.3);
+  margin: 0px 103px 0px 0px;
+  float: left;
+  overflow: hidden;
+}
+
+    /*************   second_line   ****************/
+.second_line {
+  overflow: hidden;
+  width: 1000px;
+  height: 180px;
+}
+
+.square_slide_second_line, .collapsed_tower_erea, .conveyor_erea {
+  float: left;
+}
+
+      /*********   square   ****************/
+#s4 {
+  margin: 0px 100px 0px 5px; 
+  float: none;
+  transition: all 1s linear;
+}
+
+      /**********   collapsed tower   ***************/
+.collapsed_tower {
+  transition: all 1s linear;
+}
+
+.triangle_erea {
+  position: relative;
+}
+
+.triangle {
+  content:"";
+  border: solid 27px transparent;
+  border-bottom: solid 27px rgba(0,0,255,0.9);
+  transition: all 1s linear;
+  position: absolute;
+  top: -54px;
+}
+
+.triangle::before {
+  content:"";
+  border: solid 22px transparent;
+  border-bottom: solid 22px rgba(255,255,255,0.3);
+  transition: all 1s linear;
+  position: absolute;
+  top: -19px;
+  left: -22px;
+}
+
+.tower {
+  height: 75px;
+  width: 50px;
+  border: solid 2px rgba(0,0,255,0.9);
+  background-color: rgba(0,0,255,0.3);
+  margin: 27px 0px 0px 0px;
+}
+
+.tower p {
+  margin: 10px 0px;
+}
+
+      /*********   conveyor   **************/
+.conveyor_erea {
+  margin-left: 202px;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  border: solid 2px rgba(0,0,255,0.9);
+  background-color: rgba(0,0,255,0.3);
+  margin: 0px 0px 0px 0px;
+  transition: all 5s linear;
+}
+
+.conveyor_belt {
+  height: 10px;
+  width: 330px;
+  border: solid 2px rgba(0,0,255,0.9);
+  background-color: rgba(0,0,255,0.3);
+  margin: 0px 0px 0px 0px;
+}
+
+.conveyor_gear_erea {
+  overflow: hidden;
+}
+
+.gear_erea {
+  float: left;
+}
+
+#ga2 {
+  margin-left: 220px;
+}
+
+.gear_big {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: solid 2px rgba(0,0,255,0.9);
+  background-color: rgba(0,0,255,0.3);
+  position: relative;
+  transition: all 7s linear;
+}
+
+.gear_small {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #0000cd;
+}
+
+#g_small_1, #g_small_5 {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+}
+
+#g_small_2, #g_small_6 {
+  position: absolute;
+  top: 20px;
+  right: 5px;
+}
+
+#g_small_3, #g_small_7 {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+}
+
+#g_small_4, #g_small_8 {
+  position: absolute;
+  top: 20px;
+  left: 5px;
+}
+
+
+
+    /*************   third_line   ****************/
+.third_line {
+  overflow: hidden;
+  width: 1000px;
+}
+
+      /*********   seesaw   ********************/
+.seesaw_frame {
+  float: right;
+  padding-top: 85px;
+}
+
+.seesaw_top {
+  overflow: hidden;
+  padding: 0px 50px 0px 0px;
+}
+
+.ball {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: solid 2px rgba(0,0,255,0.9);
+  background-color: rgba(0,0,255,0.3);
+  float: left;
+  margin-top: 54px;
+}
+
+#b2 {
+  float: left;
+  margin-left: 150px;
+}
+
+.seesaw {
+  height: 10px;
+  width: 300px;
+  border: solid 2px rgba(0,0,255,0.9);
+  background-color: rgba(0,0,255,0.3);
+  margin: 0px 0px 0px 0px;
+}
+
+.seesaw_third {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.stand {
+  content:"";
+  border: solid 50px transparent;
+  border-bottom: solid 50px rgba(0,0,255,0.9);
+  position: absolute;
+  top: -50px;
+  left: 100px;
+}
+
+.stand::before {
+  content:"";
+  border: solid 45px transparent;
+  border-bottom: solid 45px rgba(255,255,255,0.4);
+  position: absolute;
+  top: -42px;
+  left: -45px;
+}
+
+      /*************   jump ball   ***************/
+.jump_ball_erea {
+  float: right;
+  overflow: hidden;
+  width: 300px;
+  /*border: solid 1px #000;*/
+  padding-top: 100px;
+}
+
+#ball_2 {
+  float: right;
+  margin-top: 0px;
+  opacity: 0;
+}
+
+.car {
+  height: 10px;
+  width: 50px;
+  border: solid 2px rgba(0,0,255,0.9);
+  background-color: rgba(0,0,255,0.3);
+  margin-top: 125px;
+}
+
+#car_2 {
+  float: right;
+  margin-top: 0px;
+}
+
+      /*************   go to goal   ***************/
+.go_to_goal_erea {
+  float: right;
+  overflow: hidden;
+  /*border: solid 1px #000;*/
+  width: 300px;
+}
+
+.car_set {
+  float: right;
+  margin-top: 170px;
+  display: none;
+}
+
+#ball_3 {
+  float: none;
+  margin-top: 0px;
+}
+
+#car_3 {
+  margin-top: 0px;
+  height: 20px;
+}
+
+.goal_set {
+  border: solid 3px #0000ff;
+  border-bottom: none;
+  width: 100px;
+  height: 200px;
+  margin-top: 50px;
+}
+
+.goal_board p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 30px;
+  color: #0000cd;
+  margin: 0px;
+  width: 100px;
+  text-align: center;
+  border-bottom: solid 3px #0000ff;
+}
+
+
+/**********   goal page   ***************/
+.goalPage {
+  background-image: url(img/goal_page.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  width: 1000px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.speech_balloon {
+  margin: 30px 0px 0px 100px;
+  border: solid 5px #0000cd;
+  border-radius: 50px;
+  width: 400px;
+  background-color: rgba(255,255,255,0.8);
+  position: relative;
+}
+
+.speech_balloon::before {
+  content:"";
+  border: solid 30px transparent;
+  border-left: solid 80px rgba(0,0,205,0.7);
+  position: absolute;
+  top: 40px;
+  left: 400px;
+}
+
+.speech_balloon::after {
+  content:"";
+  border: solid 30px transparent;
+  border-left: solid 80px rgba(255,255,255,0.95);
+  position: absolute;
+  top: 40px;
+  left: 390px;
+}
+
+.speech_balloon p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 50px;
+  margin: 0px;
+  color: #0000cd;
+  padding: 20px;
+  text-align: center;
+}
+
+.goalPage button {
+  margin: 163px 0px 0px 155px;
+}
+
+
+/******   google fonts   ***********/
+/*
+font-family: 'Bungee', cursive;
+font-family: 'Open Sans', sans-serif;
+*/
+
+
+
+
+
+
+

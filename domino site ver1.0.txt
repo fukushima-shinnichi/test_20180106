@@ -1,0 +1,8 @@
+domino site
+
+製作時間　20時間
+レスポンシブル：非対応
+
+コメント
+HTML,CSS,jQueryの久しぶりの練習と、
+css transformの練習でドミノ倒し風のサイトを製作してみました。

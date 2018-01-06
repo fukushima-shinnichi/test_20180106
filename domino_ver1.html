@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>domino site</title>
+<meta name="description" content="domino site">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+<link href="https://fonts.googleapis.com/css?family=Bungee|Open+Sans:400,600i" rel="stylesheet">
+<link rel="stylesheet" href="css/domino_ver1/domino_ver1.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+  <!-------------   body img white layer  ---------------->
+  <div class="imgWhiteLayer">
+  
+    <!--------------    main image erea   ---------------->
+    <div class="mainImageErea">
+      <!--------------    start page      ------------>
+      <div class="startPage">
+        <div class="startImgLayer">
+          <h1>domio site</h1>
+          <button>
+            <h3>start</h3>
+          </button>
+          <small>version 1.0  2017/12/25~</small>
+        </div>
+      </div>
+
+      <!----------     domino page     -------------->
+      <div class="dominoPage">
+        <div class="dominoImgLayer"></div>
+        <div class="dominoErea">
+          <!----------    top line    ----------->
+          <div class="top_line">
+            <!----------    roll    ----------->
+            <div id="t1" class="domino"><p>1</p></div>
+            <div id="t2" class="domino"><p>2</p></div>
+            <div id="t3" class="domino"><p>3</p></div>
+            <div id="t4" class="domino"><p>4</p></div>
+            <div id="t5" class="domino"><p>5</p></div>
+            <div id="t6" class="domino"><p>6</p></div>
+          <!----------    slide    --------->
+            <div class="square_slide_top_line">
+              <div id="s1" class="square"><p>a</p></div>
+              <div id="s2" class="square"><p>b</p></div>
+              <div id="s3" class="square"><p>c</p></div>
+            </div>
+          </div>
+          <!----------     second line   ----------->
+          <div class="second_line">
+            <!----------    slide second line      --------->
+            <div class="square_slide_second_line">
+              <div id="s4" class="square"><p>d</p></div>
+            </div>
+            <!----------   collapsed tower second line    --------->
+            <div class="collapsed_tower_erea">
+              <div class="collapsed_tower">
+                <div class="triangle_erea">
+                  <div class="triangle"></div>
+                </div>
+                <div class="tower"><p>A</p></div>
+              </div>
+            </div>
+            <!----------------     conveyor     --------------->
+            <div class="conveyor_erea">
+              <div class="box_erea">
+                <div id="b1" class="box"><p>box</p></div>
+              </div>
+              <div class="conveyor_belt"></div>
+              <div class="conveyor_gear_erea">
+                <div id="ga1" class="gear_erea">
+                  <div id="g_big_1" class="gear_big">
+                    <div id="g_small_1" class="gear_small"></div>
+                    <div id="g_small_2" class="gear_small"></div>
+                    <div id="g_small_3" class="gear_small"></div>
+                    <div id="g_small_4" class="gear_small"></div>
+                  </div>
+                </div>
+                <div id="ga2" class="gear_erea">
+                  <div id="g_big_2" class="gear_big">
+                    <div id="g_small_5" class="gear_small"></div>
+                    <div id="g_small_6" class="gear_small"></div>
+                    <div id="g_small_7" class="gear_small"></div>
+                    <div id="g_small_8" class="gear_small"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--------------    third line    -------------->
+          <div class="third_line">
+            <!----------------    seesaw_erea      ------------------->
+            <div class="seesaw_frame">
+              <div class="seesaw_erea">
+                <div class="seesaw_top">
+                  <div id="ball_1" class="ball"></div>
+                  <div id="b2" class="box"><p>box</p></div>
+                </div>
+                <div class="seesaw_second">
+                  <div class="seesaw"></div>
+                </div>
+                <div class="seesaw_third">
+                  <div class="stand"></div>
+                </div>
+              </div>
+            </div>
+            <!----------------     jump ball     -------------------->
+            <div class="jump_ball_erea">
+              <div id="ball_2" class="ball"></div>
+              <div id="car_1" class="car"></div>
+              <div id="car_2" class="car"></div>
+            </div>
+            <!----------------     go to goal     -------------------->
+            <div class="go_to_goal_erea">
+              <div class="car_set">
+                <div id="ball_3" class="ball"></div>
+                <div id="car_3" class="car"></div>
+              </div>
+              <div class="goal_set">
+                <div class="goal_board">
+                  <p>GOAL</p>
+                </div>
+              </div>
+            </div>
+          
+          </div>
+          
+          
+        </div>
+      </div>
+
+      <!--    goal page      -->
+      <div class="goalPage">
+        <div class="goalLayer">
+          <div class="speech_balloon">
+            <p>Did you enjoy <br>this site?</p>
+          </div>
+          <button>
+            <h3>try again</h3>
+          </button>
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
+
+<!---------   jQuery    ----------------------->
+<script src="jQuery_base/jquery-3.2.1.min.js"></script>
+<script src="jQuery_base/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script src="js/domino_ver1/domino_ver1.js"></script>
+</body>
+</html>

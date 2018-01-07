@@ -22,7 +22,7 @@
 1、全てのファイルをフォークし、ローカルにクローンを作成。  
 2、ローカルに保存したHTMLファイルをウェブブラウザで開く。  
 ## デモサイトURL（ポートフォリオURL）
-[testAAA](https://github.com/elmas3 "ポートフォリオURL")
+[https://github.com/elmas3](https://github.com/elmas3 "ポートフォリオURL")
 
 ***
 ***
